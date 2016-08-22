@@ -1,11 +1,15 @@
-# CAGradientButton
-###一行代码实现创建一个边框颜色可以渐变的Button
+//
+//  GradientButton.h
+//  渐变色
+//
+//  Created by WuChunlong on 16/8/20.
+//  Copyright © 2016年 WuChunlong. All rights reserved.
+//
 
-- 创建方法
+#import <UIKit/UIKit.h>
 
+@interface CAGradientButton : UIButton
 
-
-```   
 #pragma mark - 静态初始化方法
 /**
  *  创建一个可以边框颜色渐变的Button
@@ -19,8 +23,6 @@
  */
 + (instancetype)buttonWithFrame:(CGRect)frame borderColors:(NSArray<UIColor *> *)colors borderWidth:(CGFloat)borderWidth addToParentView:(UIView *)parentView;
 
-
-
 /**
  *  创建一个可以边框颜色渐变的Button
  *
@@ -33,4 +35,5 @@
  *  @return 可以边框颜色渐变的Button
  */
 + (instancetype)buttonWithFrame:(CGRect)frame borderColors:(NSArray<UIColor *> *)colors borderWidth:(CGFloat)borderWidth addToParentView:(UIView *)parentView action:(void(^)(CAGradientButton *button))action;
-```
+
+@end
